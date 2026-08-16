@@ -14,6 +14,15 @@ npm run build
 ```
 
 ### 2. Launch the System
+
+**Option A (One-Click Starter - Recommended):**
+Double-click [`start_contest.bat`](file:///D:/Kevin11/Projects/ReportContest/start_contest.bat) or run:
+```bash
+npm run starter
+```
+*This opens the interactive Control Center where you can open/close firewall ports, rebuild client assets, run stress tests, and launch the server with one click.*
+
+**Option B (Direct Command Line):**
 ```bash
 npm start
 ```
@@ -29,6 +38,11 @@ Access URLs on your Local Network:
 🔑 Admin Dashboard: http://localhost:3000/#/admin
 ======================================================
 ```
+
+### 3. Stop & Lock Down After Contest
+When the contest ends:
+* When stopping the server with `Ctrl + C`, the script will automatically ask if you want to close the firewall port and lock down your laptop.
+* Or open [`start_contest.ps1`](file:///D:/Kevin11/Projects/ReportContest/start_contest.ps1) and choose Option `[3] Close Firewall Port 3000`.
 
 ---
 

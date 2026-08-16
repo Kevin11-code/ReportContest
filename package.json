@@ -5,6 +5,7 @@
   "main": "server/server.js",
   "scripts": {
     "start": "node server/server.js",
+    "starter": "powershell -ExecutionPolicy Bypass -File ./start_contest.ps1",
     "server": "node server/server.js",
     "client": "npm run dev --prefix client",
     "build": "npm run build --prefix client",
