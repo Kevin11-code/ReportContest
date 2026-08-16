@@ -1,0 +1,39 @@
+{
+  "name": "reportcontest",
+  "version": "1.0.0",
+  "description": "Offline Hackathon Report Submission System",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "node server/server.js",
+    "client": "npm run dev --prefix client",
+    "build": "npm run build --prefix client",
+    "dev": "concurrently \"node server/server.js\" \"npm run dev --prefix client\"",
+    "clean": "node server/clean_db.js",
+    "seed": "node server/seed.js",
+    "test": "node server/test_suite.js",
+    "test:suite": "node server/test_suite.js",
+    "test:stress": "node server/stress_test.js"
+  },
+  "keywords": [
+    "offline",
+    "contest",
+    "hackathon",
+    "proctoring",
+    "exam"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "cors": "^2.8.6",
+    "express": "^5.2.1",
+    "jszip": "^3.10.1",
+    "qrcode": "^1.5.4",
+    "ws": "^8.21.3"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
